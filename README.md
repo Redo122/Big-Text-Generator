@@ -1,9 +1,10 @@
 # Big Text Generator
-This program will turn your text into a large ascii art quickly and efficiently.
-Once it's generated the ANSI art, it will put it into a text file.
-The text file is overwritten after each use of the program.
-Currently only supports letters, however I will probably add support for numbers and common symbols in the future.
-Entering anything but letters will hang the program.
+This program will turn your text into a large ascii art quickly and efficiently.<br/>
+Once it's generated the ANSI art, it will put it into a text file.<br/>
+The text file is overwritten after each use of the program. (Might change this.)<br/>
+Currently only supports letters, numbers, and basic punctuation. (More characters coming in v1.3)<br/>
+Entering anything but what's supported will hang the program. (Fixed in v1.3 coming soon)<br/>
+Feel free to use the generated characters in whatever projects you want, just be sure to credit me :)
 
 # v1.2
 Added support for numbers, spaces, exclamation marks, question marks, periods, and commas.
