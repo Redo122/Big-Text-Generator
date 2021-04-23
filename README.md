@@ -5,7 +5,7 @@ The text file is overwritten after each use of the program. (Might change this.)
 Currently only supports letters, numbers, and basic punctuation. (More characters coming in v1.3)<br/>
 Entering anything but what's supported will hang the program. (Fixed in v1.3 coming soon)<br/>
 Feel free to use the generated characters in whatever projects you want, just be sure to credit me :)<br/>
-Banner image made using Carbon https://carbon.now.sh/
+Social Media image made using Carbon https://carbon.now.sh/
 
 # v1.2
 Added support for numbers, spaces, exclamation marks, question marks, periods, and commas.
