@@ -7,6 +7,9 @@ Entering anything but what's supported will hang the program. (Fixed in v1.3 com
 Feel free to use the generated characters in whatever projects you want, just be sure to credit me :)<br/>
 Social Media image made using Carbon https://carbon.now.sh/
 
+# v1.3
+Added support for the entire US QWERTY keyboard, program no longer hangs if you enter an unsupported character, cleaned up arrays.
+
 # v1.2
 Added support for numbers, spaces, exclamation marks, question marks, periods, and commas.
 
