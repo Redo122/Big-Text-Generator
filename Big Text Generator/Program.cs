@@ -15,7 +15,14 @@ namespace Big_Text_Generator
             string[] line6 = { "   ", "╚═╝", "      ", "  ╚═╝ ╚═╝  ", "╚══╚╝══╝", "   ╚═╝   ", " ╚═╚╝══╝", "   ", " ╚═══╝", "╚═══╝ ", "       ", "       ", " ╚╝", "       ", "╚═╝", "╚═╝   ", "╚═════╝", "╚═════╝", "╚═════╝", "╚═════╝", "    ╚═╝", "╚═════╝ ", "╚═════╝", "    ╚═╝", "╚═════╝", "╚═════╝", "╚═╝", " ╚╝", "  ╚══╝", "       ", "╚══╝  ", "    ╚═╝", "╚═══════╝", "╚═╝ ╚═╝", "╚═════╝", "╚═════╝", "╚═════╝", "╚═════╝", "╚═╝    ", "╚═════╝", "╚═╝ ╚═╝", "╚═══╝", "╚═════╝", "╚═╝ ╚═╝", "╚═════╝", "╚═╝  ╚══╝  ╚═╝", "╚═╝  ╚══╝", "╚═════╝", "╚═╝    ", "╚══════╝", "╚═╝╚══╝", "╚══════╝", "   ╚═╝   ", "╚═════╝", "  ╚══╝  ", " ╚══╝    ╚══╝ ", "╚══╝╚══╝", "   ╚═╝   ", "╚═════╝", "╚═══╝", "   ╚═╝", "╚═══╝", "     ", "╚═══════╝", "    ", " ╚═══╝", "╚═╝", "╚═══╝ ", "       " };
             string word;
             string path = @"BigText_Output.txt";
-            Console.WriteLine("╔════╗ ╔═══╗╔═════╗   ╔═══════╗╔═════╗╔══╗╔══╗╔═══════╗\n║ ╔╗ ║ ╚╗ ╔╝║ ╔═╗ ║   ║ ╔╗ ╔╗ ║║ ╔═══╝╚╗ ╚╝ ╔╝║ ╔╗ ╔╗ ║\n║ ╚╝ ╚╗ ║ ║ ║ ║ ╚═╝   ╚═╝║ ║╚═╝║ ╚══╗  ╚╗  ╔╝ ╚═╝║ ║╚═╝\n║ ╔═╗ ║ ║ ║ ║ ║╔══╗      ║ ║   ║ ╔══╝  ╔╝  ╚╗    ║ ║   \n║ ╚═╝ ║╔╝ ╚╗║ ╚╝  ║      ║ ║   ║ ╚═══╗╔╝ ╔╗ ╚╗   ║ ║   \n╚═════╝╚═══╝╚═════╝      ╚═╝   ╚═════╝╚══╝╚══╝   ╚═╝   \nv1.3\nEnter text below:");
+            Console.WriteLine("╔════╗ ╔═══╗╔═════╗   ╔═══════╗╔═════╗╔══╗╔══╗╔═══════╗\n" +
+                              "║ ╔╗ ║ ╚╗ ╔╝║ ╔═╗ ║   ║ ╔╗ ╔╗ ║║ ╔═══╝╚╗ ╚╝ ╔╝║ ╔╗ ╔╗ ║\n" +
+                              "║ ╚╝ ╚╗ ║ ║ ║ ║ ╚═╝   ╚═╝║ ║╚═╝║ ╚══╗  ╚╗  ╔╝ ╚═╝║ ║╚═╝\n" +
+                              "║ ╔═╗ ║ ║ ║ ║ ║╔══╗      ║ ║   ║ ╔══╝  ╔╝  ╚╗    ║ ║   \n" +
+                              "║ ╚═╝ ║╔╝ ╚╗║ ╚╝  ║      ║ ║   ║ ╚═══╗╔╝ ╔╗ ╚╗   ║ ║   \n" +
+                              "╚═════╝╚═══╝╚═════╝      ╚═╝   ╚═════╝╚══╝╚══╝   ╚═╝   \n" +
+                              "v1.3\n" +
+                              "Enter text below:");
             word = Console.ReadLine();
             Console.WriteLine("Text length = " + Convert.ToString(word.Length));
             for (int i = 0; i < word.Length; i++)
@@ -23,7 +30,8 @@ namespace Big_Text_Generator
                 int number = char.ToUpper(word[i]) - 32;
                 if (number > 94)
                 {
-                    Console.WriteLine("Error, this program only supports characters on the standard US QWERTY keyboard.\nPress any key to exit.");
+                    Console.WriteLine("Error, this program only supports characters on the standard US QWERTY keyboard.\n" +
+                                      "Press any key to exit.");
                     Console.ReadKey();
                 }
             }
@@ -107,7 +115,9 @@ namespace Big_Text_Generator
             }
             File.AppendAllText(path, "\n");
             string readText = File.ReadAllText(path);
-            Console.WriteLine(readText + "\nText file 'BigText_Output.txt' created. \nPress any key to exit...");
+            Console.WriteLine(readText + "\n" +
+                             "Text file 'BigText_Output.txt' created. \n" +
+                             "Press any key to exit...");
             Console.ReadKey();
         }
     }
