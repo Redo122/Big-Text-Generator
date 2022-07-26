@@ -1,6 +1,6 @@
 # Big Text Generator
-This program will turn your text into a large ASCII art quickly and efficiently.<br/>
-Once it's generated the ASCII art, it will put it into a text file.<br/>
+This program will turn your text into a large ANSI art quickly and efficiently.<br/>
+Once it's generated the ANSI art, it will put it into a text file.<br/>
 The text file is overwritten after each use of the program. (Might change this.)<br/>
 Supports all characters on the US QWERTY keyboard.<br/>
 Feel free to use the generated characters in whatever projects you want, just be sure to credit me :)<br/>
