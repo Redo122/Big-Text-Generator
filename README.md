@@ -1,4 +1,5 @@
 # Big Text Generator
+Requires .NET 3.1.X
 This program will turn your text into a large ANSI art quickly and efficiently.<br/>
 Once it's generated the ANSI art, it will put it into a text file.<br/>
 The text file is overwritten after each use of the program. (Might change this.)<br/>
